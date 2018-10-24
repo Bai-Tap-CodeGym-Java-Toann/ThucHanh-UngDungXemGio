@@ -17,14 +17,7 @@
     }
 </style>
 <body>
-<%
-    if (request.getAttribute("change")!=null){
-    out.print("<script>\n" +
-            "document.getElementById(\"locale\").innerHTML+=\"<input type=\\\"hidden\\\" value=\\\"Asia/Ho_Chi_Minh\\\">\";"+
-            "    document.getElementById('locale').submit()\n" +
-            "</script>");
-}
-%>
+
 <h2>${city} time: ${date}</h2>
 <br>
 <form id="locale" method="post">
